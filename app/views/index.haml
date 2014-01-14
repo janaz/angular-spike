@@ -1,0 +1,42 @@
+!!! 5
+%html{ 'ng-app' => "phonecatApp" }
+  %head
+    %title= "Your Website"
+    %meta{ :content => "3 days", :name => "revisit-after" }
+    %link{ :href => "//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css", :media => "screen", :rel => "stylesheet" }
+    %script{ :type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js" }
+    %script{ :type => "text/javascript", :src => "/resources/js/controllers.js" }
+    %script{ :type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" }
+
+  %body{ 'ng-controller' => "PhoneListCtrl" }
+    %h1 Hi
+    %p Nothing here {{'yet' + '!'}}
+    %p 1 + 2 = {{ 1 + 2 }}
+    %ul
+      %li
+        %span Nexus S
+        %p Fast just got faster with Nexus S.
+      %li
+        %span Motorola XOOM™ with Wi-Fi
+        %p The Next, Next Generation tablet.
+    %p Total number of phones: 2
+
+    %ul
+      %li{ 'ng-repeat' => 'phone in phones'}
+        %span {{phone.name}}
+        %p {{phone.snippet}}
+    %p Total number of phones: {{phones.length}}
+    %p Hello, {{name}}!
+
+    .container-fluid
+      .row-fluid
+        .span2
+          Filtering by: {{query}}
+        .span2
+          Search:
+          %input{ 'ng-model' => 'query' }
+        .span10
+          %ul.phones
+            %li{ 'ng-repeat' => 'phone in phones | filter:query' }
+              %span {{phone.name}}
+              %p {{phone.snippet}}
