@@ -1,0 +1,6 @@
+name: another app
+description: its package from the monorepo
+config:
+  a: bar
+  b: foo
+
