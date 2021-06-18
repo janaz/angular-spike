@@ -1,0 +1,6 @@
+name: test
+description: descr
+config:
+  a: foo
+  b: bar
+
