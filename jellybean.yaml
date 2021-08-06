@@ -11,22 +11,22 @@ jellybean:
     - key: example-other-team
       relationship: co-ower
   categories:
-    - protocols:
-        - tcp
-        - ip
-        - https
-    - data-classification:
-        - authentication-verifier
-        - pii
-        - gdpr
-    - opperations:
-        - store
-    - outage-impact:
-        - critical-impact
-    - outage-likelihood:
-        - unlikely
-    - network-exposure:
-        - internal-behind-firewall
+    protocols:
+      - tcp
+      - ip
+      - https
+    data-classification:
+      - authentication-verifier
+      - pii
+      - gdpr
+    opperations:
+      - store
+    outage-impact:
+      - critical-impact
+    outage-likelihood:
+      - unlikely
+    network-exposure:
+      - internal-behind-firewall
   dependencies:
     - key: example-other-services
       description: Relies on this service for xyz
