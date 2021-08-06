@@ -3,6 +3,7 @@ jellybean:
   name: Example user service
   type: service
   description: >-
+    Updated!!!!
     This service is an example of how a user service might
     look in a jellybean.yml file.
   groups:
