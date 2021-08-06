@@ -6,9 +6,9 @@ jellybean:
     This service is an example of how a user service might
     look in a jellybean.yml file.
   groups:
-    - key: example-team
+    - key: feed-team
       relationship: co-ower
-    - key: example-other-team
+    - key: platform-team
       relationship: co-ower
   categories:
     protocols:
@@ -23,8 +23,6 @@ jellybean:
       - store
     outage-impact:
       - critical-impact
-    outage-likelihood:
-      - unlikely
     network-exposure:
       - internal-behind-firewall
   dependencies:
