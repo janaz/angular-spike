@@ -26,9 +26,7 @@ jellybean:
     network-exposure:
       - internal-behind-firewall
   dependencies:
-    - key: example-other-services
+    - key: feed-bff
       description: Relies on this service for xyz
-    - key: example-sdk
-      description: Relies on this service for xyz
-    - key: example-tool
+    - key: feed-api
       description: Relies on this service for xyz
